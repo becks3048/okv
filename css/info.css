@@ -1,0 +1,72 @@
+@charset 'UTF-8';
+/* 브랜드 소개 */
+.ov-intro {}
+.intro-table-wrap {
+    width: 100%;
+    overflow: auto;
+}
+.intro-table {
+    min-width: 600px;
+}
+.intro-table thead {
+    background-color: #023586;
+    color: #fff;
+}
+.intro-table tbody {
+    background-color: #DBE1ED;
+    font-size: 0.9em;
+    font-weight: 500;
+    color: #023586;
+    text-align: center;
+}
+.intro-table tr {
+    height: 80px;
+}
+.intro-table th, .intro-table td {
+    width: 50%;
+    border: 2px solid #023586;
+}
+.ov-msg-container {
+    /* position: relative; */
+    background: url('../images/intro/intro_bg.jpeg') center center / cover fixed no-repeat;
+    color: #fff;
+    /* z-index: 1; */
+}
+.ov-msg-container1:before {
+    /* 부모 크기대로 바닥에(z-index: -1) 
+    50%투명도를 가진 검정박스 설계 */
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: 0.5;
+    z-index: -1;
+    content: '';
+}
+.ov-msg-wrap {
+    height: 60vh;
+    min-height: 500px;
+    background-color: rgba(0,0,0,0.5);
+}
+.ov-msg {
+    text-align: center;
+}
+.ov-msg h2 {
+    color: #fff;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+/* 1. 모바일까지 */
+@media screen and (max-width: 767px) {}
+
+/* 2. 태블릿부터 */
+@media screen and (min-width: 768px) {}
+
+/* 3. 태블릿만 */
+@media screen and (min-width: 768px) and (max-width: 1279px) {}
+
+/* 4. PC부터 */
+@media screen and (min-width: 1280px) {}

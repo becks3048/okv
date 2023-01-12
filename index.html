@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OAK VALLEY</title>
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/common_res.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main_res.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body class="main">
+    <div id="skip" class="center">
+        <a href="#ov-main">본문 바로가기</a>
+        <a href="#ov-gnb">주 메뉴 바로가기</a>
+        <a href="#ov-lnb">서브 메뉴 바로가기</a>
+    </div>
+    <header id="ov-hd">
+        <div class="wrapper">
+            <h1 class="logo"><a href="index.html"><span class="blind">오크밸리</span></a></h1>
+            <button class="m-gnb-btn m-gnb-open">
+                <span class="blind">모바일 메뉴 펼침 버튼</span>
+                <span class="line line1">선</span>
+                <span class="line line2">선</span>
+                <span class="line line3">선</span>
+            </button>
+            <div class="modal"><span class="blind">모달창</span></div>
+            <div class="ov-gnb-wrap">
+                <h2 class="blind">주 메뉴와 SNS 메뉴</h2>
+                <div class="m-gnb-close-wrap">
+                    <button class="m-gnb-btn m-gnb-close">
+                        <span class="blind">모바일 메뉴 닫힘 버튼</span>
+                        <span class="line line1">선</span>
+                        <span class="line line2">선</span>
+                        <span class="line line3">선</span>
+                    </button>
+                </div>
+                <nav id="ov-gnb" class="clearfix">
+                    <ol class="gnb">
+                        <li class="depth1">
+                            <a href="#">소개</a>
+                            <ul class="depth2">
+                                <li><a href="#">오크밸리 소개</a></li>
+                                <li><a href="#">오크밸리 소식</a></li>
+                                <li><a href="#">제휴 리조트</a></li>
+                                <li><a href="#">오시는 길</a></li>
+                            </ul>
+                        </li>
+                        <li class="depth1">
+                            <a href="#">객실</a>
+                            <ul class="depth2">
+                                <li><a href="#">객실 가이드</a></li>
+                                <li><a href="#">객실 요금</a></li>
+                                <li><a href="#">패키지</a></li>
+                                <li><a href="#">골프 빌리지</a>
+                                    <ul class="depth3">
+                                        <li><a href="#">골프콘도 A·B동</a></li>
+                                        <li><a href="#">사우스콘도</a></li>
+                                        <li><a href="#">노스콘도</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">스키 빌리지</a>
+                                    <ul class="depth3">
+                                        <li><a href="#">스키콘도 C동</a></li>
+                                        <li><a href="#">스키콘도 D동</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="depth1">
+                            <a href="#">다이닝</a>
+                            <ul class="depth2">
+                                <li><a href="#">골프 빌리지</a></li>
+                                <li><a href="#">스키 빌리지</a></li>
+                            </ul>
+                        </li>
+                        <li class="depth1">
+                            <a href="#">액티비티</a>
+                            <ul class="depth2">
+                                <li><a href="#">골프 빌리지</a></li>
+                                <li><a href="#">스키 빌리지</a></li>
+                            </ul>
+                        </li>
+                        <li class="depth1">
+                            <a href="#">부대시설</a>
+                            <ul class="depth2">
+                                <li><a href="#">골프 빌리지</a></li>
+                                <li><a href="#">스키 빌리지</a></li>
+                            </ul>
+                        </li>
+                        <li class="depth1">
+                            <a href="#">산책로</a>
+                            <ul class="depth2">
+                                <li><a href="#">산책로</a></li>
+                            </ul>
+                        </li>
+                        <li class="depth1">
+                            <a href="#">골프</a>
+                            <ul class="depth2">
+                                <li><a href="#">골프</a></li>
+                            </ul>
+                        </li>
+                        <li class="depth1">
+                            <a href="#">스키</a>
+                            <ul class="depth2">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">스키장소개</a>
+                                    <ul class="depth3">
+                                        <li><a href="#">실시간 웹캠/날씨</a></li>
+                                        <li><a href="#">슬로프/리프트</a></li>
+                                        <li><a href="#">렌탈/스키샵/시즌락카</a></li>
+                                        <li><a href="#">요금안내</a></li>
+                                    </ul></li>
+                                <li><a href="#">스키 & 보드 스쿨</a>
+                                    <ul class="depth3">
+                                        <li><a href="#">스키 & 보드 스쿨 소개</a></li>
+                                        <li><a href="#">프로그램/요금</a></li>
+                                        <li><a href="#">아카데미 소개</a></li>
+                                    </ul></li>
+                                <li><a href="#">눈썰매장</a></li>
+                            </ul>
+                        </li>
+                        <li class="depth1">
+                            <a href="#">연회/웨딩</a>
+                            <ul class="depth2">
+                                <li><a href="#">세미나/연회</a></li>
+                                <li><a href="#">연회</a></li>
+                            </ul>
+                        </li>
+                    </ol>
+                </nav>
+                <nav class="hd-sns-wrap">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com/loveovbaguette/" target="_blank" class="fa-brands fa-facebook-f"><span class="blind">페이스북</span></a></li>
+                        <li><a href="https://www.instagram.com/ovbaguette_kr/" target="_blank" class="fa-brands fa-instagram"><span class="blind">인스타그램</span></a></li>
+                        <li><a href="https://www.youtube.com/user/loveovbaguette" target="_blank" class="fa-brands fa-youtube"><span class="blind">유튜브</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <button class="btn-sch"><span class="blind">검색하기</span></button>
+        </div>
+    </header>    
+    <main id="ov-main">
+        <section class="main-banner-container pd0">
+            <h2 class="blind">메인배너</h2>
+            <div class="main-banner-wrap">
+                <div class="main-banner">
+                    <div class="mb-slide main-banner-slide1"><a href="#"><span class="blind">메인배너1</span></a></div>
+                    <div class="mb-slide main-banner-slide2"><a href="#"><span class="blind">메인배너2</span></a></div>
+                    <div class="mb-slide main-banner-slide3"><a href="#"><span class="blind">메인배너3</span></a></div>
+                    <div class="mb-slide main-banner-slide4"><a href="#"><span class="blind">메인배너4</span></a></div>
+                    <div class="mb-slide main-banner-slide5"><a href="#"><span class="blind">메인배너5</span></a></div>
+                    <div class="mb-slide main-banner-slide6"><a href="#"><span class="blind">메인배너6</span></a></div>
+                </div>
+            </div>
+            <div class="main-banner-pagination main-pagination"></div>
+            <div class="main-banner-controls main-controls"></div>
+        </section>
+        <section class="main-offer-container ani-top">
+            <div class="wrapper main-offer-wrap relative">
+                <h2>스페셜 오퍼</h2>
+                <div class="main-offer clearfix ">
+                    <div class="offer1 ani-top">
+                        <a href="#">
+                            <dl>
+                                <dt>크리스마스 윈터 원더랜드 in 오크밸리</dt>
+                                <dd>즐거움과 설렘이 가득한 오크밸리 윈터 원더랜드에서 소중한 사람들과 함께 특별한 크리스마스의 추억을 만들어보세요.</dd>
+                            </dl>
+                        </a>
+                    </div>
+                    <div class="offer2 ani-top delay02">
+                        <a href="#">
+                            <dl>
+                                <dt>메이크 유어 온 크리스마스 패키지</dt>
+                                <dd>아늑한 객실에서 크리스마스 DIY 소품 만들기와 편안한 휴식을 즐기며 잊지 못할 크리스마스의 추억을 만들어보세요.</dd>
+                            </dl>
+                        </a>
+                    </div>
+                    <div class="offer3 ani-top delay02">
+                        <a href="#">
+                            <dl>
+                                <dt>스키 리프트 패키지</dt>
+                                <dd>오크밸리 스키장에서 가족, 연인, 친구와 함께 올 겨울 빛나는 추억을 만들어보세요.</dd>
+                            </dl>
+                        </a>
+                    </div>
+                    <div class="offer4 ani-top delay02">
+                        <a href="#">
+                            <dl>
+                                <dt>릴렉싱 홀리데이 패키지</dt>
+                                <dd>눈 덮인 참나무 숲의 파노라믹한 절경을 감상하며 새해를 맞이하는 나만의 여유로운 휴식을 계획해보세요.</dd>
+                            </dl>
+                        </a>
+                    </div>
+                    <div class="offer5 ani-top delay02">
+                        <a href="#">
+                            <dl>
+                                <dt>오크밸리 설날 선물 기획전</dt>
+                                <dd>강원도 청정 자연과 맛, 정성을 담은 오크밸리 설 선물세트로 소중한 분들께 감사의 마음을 전하세요.</dd>
+                            </dl>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="more-wrap"><a href="#" class="btn-more">show more</a></div>
+            </div>
+        </section>
+        <section class="main-condo-container ani-top">
+            <div class="wrapper-s main-condo-wrap relative">
+                <h2>객실</h2>
+                <ul class="main-condo clearfix">
+                    <li class="condo-item condo-item1">
+                        <a href="#">
+                            <dl class="condo-dl">
+                                <dt>카테고리</dt>
+                                <dd class="condo-cate">스키 빌리지</dd>
+                                <dt>제목</dt>
+                                <dd class="condo-subject">대자연 속 오크밸리 스키 빌리지에서 한 차원
+                                    높은 고품격 휴식 공간을 경험할 수 있습니다.</dd>
+                                <dt>요약</dt>
+                                <dd class="condo-summary">오크밸리의 품위를 유지하면서도 POP ART 스타일의 감각적인 공간 디자인 연출을 감상할 수 있는 객실입니다.</dd>
+                                <dt>대표사진</dt>
+                                <dd class="condo-img">
+                                    <img src="images/e5823043ee844a2c92e1d43952bebfe1.jpg" alt="스토리 이미지">
+                                    <span class="condo-inner-txt mont">스키콘도</span>
+                                </dd>
+                                <dt>날짜</dt>
+                                <dd class="condo-date">2022-11-01</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="condo-item condo-item2">
+                        <a href="#">
+                            <dl class="condo-dl">
+                                <dt>카테고리</dt>
+                                <dd class="condo-cate">스키빌리지</dd>
+                                <dt>제목</dt>
+                                <dd class="condo-subject">대자연 속 오크밸리 스키 빌리지에서 한 차원 높은 고품격 휴식 공간을 경험할 수 있습니다.</dd>
+                                <dt>요약</dt>
+                                <dd class="condo-summary">
+                                    창 밖으로 펼쳐지는 대자연의 아름다운 전망을 감상하며 한 단계 업그레이드 된 고품격 휴식을 만끽할 수 있습니다.</dd>
+                                <dt>대표사진</dt>
+                                <dd class="condo-img">
+                                    <img src="images/2e9e01f4b1eb4d8594d32ea8a6dfc642.jpg" alt="스토리 이미지">
+                                    <span class="condo-inner-txt mont">패밀리 스위트룸</span>
+                                </dd>
+                                <dt>날짜</dt>
+                                <dd class="condo-date">2022-11-01</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    
+                    <li class="condo-item condo-item3">
+                        <a href="#">
+                            <dl class="condo-dl">
+                                <dt>카테고리</dt>
+                                <dd class="condo-cate">골프 빌리지</dd>
+                                <dt>제목</dt>
+                                <dd class="condo-subject">지중해풍 유럽식 건축 양식이 돋보이는 골프 콘도에서 보다 품격 있고 프라이빗 한 휴식을 즐길 수 있습니다.</dd>
+                                <dt>요약</dt>
+                                <dd class="condo-summary">최첨단 시스템과 최고급 시설을 갖춘 프라이빗 한 객실에서 더욱 품격 있고 여유로운 휴식을 취할 수 있습니다.</dd>
+                                <dt>대표사진</dt>
+                                <dd class="condo-img">
+                                    <img src="images/9f53804d0b834858b3dfeb66f7102213.jpg" alt="스토리 이미지">
+                                    <span class="condo-inner-txt mont">사우스콘도</span>
+                                </dd>
+                                <dt>날짜</dt>
+                                <dd class="condo-date">2022-11-01</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="condo-item condo-item4">
+                        <a href="#">
+                            <dl class="condo-dl">
+                                <dt>카테고리</dt>
+                                <dd class="condo-cate">골프 빌리지</dd>
+                                <dt>제목</dt>
+                                <dd class="condo-subject">지중해풍 유럽식 건축 양식이 돋보이는 골프 콘도에서 보다 품격 있고 프라이빗 한 휴식을 즐길 수 있습니다.</dd>
+                                <dt>요약</dt>
+                                <dd class="condo-summary">
+                                    우아함과 고급스러움으로 압도적인 첫인상을 선사하는 프리미어 스위트룸에서는 넓고 여유로운 거실 공간에서 비즈니스 미팅을 갖거나 독립된 다이닝 공간에서
+                                    프라이빗 한 파티를 즐기실 수 있습니다. 안락하고 편안한 휴식을 최우선으로 준비된 마스터 베드룸 그리고 VIP를 의한 최상의 서비스로 격조 높은 휴식을 선사해드립니다.</dd>
+                                <dt>대표사진</dt>
+                                <dd class="condo-img">
+                                    <img src="images/78b71d234c3e4a47890ee71a9051eb7b.jpg" alt="스토리 이미지">
+                                    <span class="condo-inner-txt mont">노블</span>
+                                </dd>
+                                <dt>날짜</dt>
+                                <dd class="condo-date">2022-11-01</dd>
+                            </dl>
+                        </a>
+                    </li>
+                </ul>
+                <div class="more-wrap"><a href="#" class="btn-more">show more</a></div>
+            </div>
+        </section>
+        <!-- <section class="main-dining-container ani-top">
+            <div class="wrapper main-dining-wrap relative">
+                <h2>다이닝</h2>
+                <ul class="main-dining clearfix">
+                    <li class="dn-item dn-item1 on">
+                        <a href="#">
+                            <dl class="dn-dl">
+                                <dt>제목</dt>
+                                <dd class="dn-subject ">함께해 행복해 감사해</dd>
+                                <dt>대표사진</dt>
+                                <dd class="dn-img"><span><img src="images/dining_01.png" alt="프로모션"></span></dd>
+                                <dt>바로가기</dt>
+                                <dd class="dn-go">READ MORE</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="dn-item dn-item2 on">
+                        <a href="#">
+                            <dl class="dn-dl">
+                                <dt>제목</dt>
+                                <dd class="dn-subject ">2022 파리바게뜨 치즈페어 시작</dd>
+                                <dt>대표사진</dt>
+                                <dd class="dn-img"><span><img src="images/dining_02.jpg" alt="프로모션"></span></dd>
+                                <dt>바로가기</dt>
+                                <dd class="dn-go">READ MORE</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="dn-item dn-item3 on">
+                        <a href="#">
+                            <dl class="dn-dl">
+                                <dt>제목</dt>
+                                <dd class="dn-subject ">건강하고 맛있는 우리 대추 가을맞이 경산 대추 대첩!</dd>
+                                <dt>대표사진</dt>
+                                <dd class="dn-img"><span><img src="images/dining_03.png" alt="프로모션"></span></dd>
+                                <dt>바로가기</dt>
+                                <dd class="dn-go">READ MORE</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="dn-item dn-item4 off">
+                        <a href="#">
+                            <dl class="dn-dl">
+                                <dt>제목</dt>
+                                <dd class="dn-subject ">파리바게뜨 아다지오 ‘디카페인’ 커피 출시!</dd>
+                                <dt>대표사진</dt>
+                                <dd class="dn-img"><span><img src="images/dining_04.png" alt="프로모션"></span></dd>
+                                <dt>바로가기</dt>
+                                <dd class="dn-go">READ MORE</dd>
+                            </dl>
+                        </a>
+                    </li>
+                </ul>
+                <div class="more-wrap"><a href="#" class="btn-more">show more</a></div>
+            </div>
+        </section> -->
+        <section class="main-product-container ani-top">
+            <div class="wrapper main-product-wrap relative">
+                <h2>다이닝</h2>
+                <div class="main-product clearfix">
+                    <a href="#" class="pd-item pd-item1">더 밸리 키친</a>
+                    <a href="#" class="pd-item pd-item2">그릴 앤 시즐</a>
+                    <a href="#" class="pd-item pd-item3">테라스 그릴</a>
+                    <a href="#" class="pd-item pd-item4">힐사이드 바비큐</a>
+                    <a href="#" class="pd-item pd-item5">포레스트</a>
+                </div>
+                <div class="more-wrap"><a href="#" class="btn-more">show more</a></div>
+            </div>
+        </section>
+    </main>
+    <footer id="ov-ft">
+        <section class="ft-sns-container">
+            <div class="ft-sns-wrap">
+                <h2 class="blind">ACTIVITY</h2>
+                <dl class="sns-dl">
+                    <dt>액티비티</dt>
+                    <dd class="sns-url mont">액티비티</dd>
+                </dl>
+                <div class="ft-insta clearfix">
+                    <a href="#" class="insta-item insta-item1">
+                        <div class="table">
+                            <div class="table-cell">
+                                <dl class="insta-item-dl">
+                                    <dt>좋아요</dt>
+                                    <dd class="sns-good">소나타 오브 라이트</dd>
+                                    <dt>내용</dt>
+                                    <dd class="sns-txt">5가지 테마로 구성된 약 1.5km의 산책로를 걸으며 형형색색의 조명과 화려한 볼거리를 즐길 수 있는 프로그램입니다.</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="insta-item insta-item2">
+                        <div class="table">
+                            <div class="table-cell">
+                                <dl class="insta-item-dl">
+                                    <dt>좋아요</dt>
+                                    <dd class="sns-good">조각공원</dd>
+                                    <dt>내용</dt>
+                                    <dd class="sns-txt">국내/외 유명 조각가들의 다채로운 작품들을 감상하며 여유로운 산책을 즐길 수 있습니다.</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="insta-item insta-item3">
+                        <div class="table">
+                            <div class="table-cell">
+                                <dl class="insta-item-dl">
+                                    <dt>좋아요</dt>
+                                    <dd class="sns-good">타이틀리스트 퍼포먼스 센터</dd>
+                                    <dt>내용</dt>
+                                    <dd class="sns-txt">최고 수준의 시스템과 설비로 최대한의 퍼포먼스를 낼 수 있는 최적의 클럽을 찾아드리는 ‘퍼포먼스 피팅‘ 서비스를 제공합니다.</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="insta-item insta-item4">
+                        <div class="table">
+                            <div class="table-cell">
+                                <dl class="insta-item-dl">
+                                    <dt>좋아요</dt>
+                                    <dd class="sns-good">수영장</dd>
+                                    <dt>내용</dt>
+                                    <dd class="sns-txt">넥 샤워, 벤치 젯 등의 바데풀을 자유롭게 이용할 수 있는 수영장입니다.</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="insta-item insta-item5">
+                        <div class="table">
+                            <div class="table-cell">
+                                <dl class="insta-item-dl">
+                                    <dt>좋아요</dt>
+                                    <dd class="sns-good">마사지 & 힐링샵</dd>
+                                    <dt>내용</dt>
+                                    <dd class="sns-txt">양덕윤 원장_대한 카이로프랙틱 협회 정회원 KSMCA 한국 스포츠마사지 자격협회 세계 활법협회 공인4단</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="insta-item insta-item6">
+                        <div class="table">
+                            <div class="table-cell">
+                                <dl class="insta-item-dl">
+                                    <dt>좋아요</dt>
+                                    <dd class="sns-good">캐러밴</dd>
+                                    <dt>내용</dt>
+                                    <dd class="sns-txt">자연과 함께 할 수 있는 여유로운 캠핑카의 매력을 느껴보실 수 있습니다.</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="ft-bbs-container">
+            <div class="ft-bbs-wrap table">
+                <h2 class="blind">커뮤니티</h2>
+                <a href="/g5/bbs/board.php?bo_table=ov_fqa" class="ft-bbs-item table-cell">
+                    <dl class="bbs-dl">
+                        <dt>고객센터</dt>
+                        <dd class="">오크밸리는 고객만족 향상 활동을 지속적으로 실천합니다.</dd>
+                    </dl>
+                </a>
+                <a href="#" class="ft-bbs-item table-cell">
+                    <dl class="bbs-dl">
+                        <dt>제휴 리조트</dt>
+                        <dd class="">오크밸리의 다양한 제휴 리조트를 확인하세요.</dd>
+                    </dl>
+                </a>
+                <a href="#" class="ft-bbs-item table-cell last">
+                    <dl class="bbs-dl">
+                        <dt>채용정보</dt>
+                        <dd class="">오크밸리에서 도전과 열정이 넘치는 인재를 모십니다</dd>
+                    </dl>
+                </a>
+            </div>
+        </section>
+        <section class="ft-info-container">
+            <h2 class="blind">브랜드 정보</h2>
+            <div class="ft-info1-wrap clearfix">
+                <div class="ft-info">
+                    <h3>Info</h3>
+                    <ul>
+                        <li><a href="/ov/info_intro.html">브랜드소개</a></li>
+                        <li><a href="/ov/info_franchise.html">창업안내</a></li>
+                        <li><a href="/ov/info_safety .html">안전보건경영방침</a></li>
+                        <li><a href="#">거래희망사전등록</a></li>
+                        <li><a href="#">윤리신고센터</a></li>
+                        <li><a href="#">채용</a></li>
+                    </ul>
+                </div>
+                <div class="ft-contact">
+                    <h3>Contact Us</h3>
+                    <dl>
+                        <dt>고객센터 안내</dt>
+                        <dd><a href="/g5/bbs/board.php?bo_table=ov_fqa">T. 1588-7676(예약)</a></dd>
+                        <dt>고객센터 전화번호</dt>
+                        <dd><a href="tel:080-731-2027">E. oakvalley@hdc-resort.com</a></dd>
+                        <dt>고객센터 운영시간</dt>
+                        <dd>회원권 분양 문의 02-2016-4600</dd>
+                        <dt>고객칭찬 게시판 안내</dt>
+                        <br>
+                        <dd><a href="/g5/bbs/board.php?bo_table=ov_good">대표자 조영환
+                            <dt></dt>
+                            <dd><a>사업자등록번호 224-81-06308</a></dd>
+                    </dl>
+                </div>
+                
+                <div class="ft-sns-brand">
+                    <div class="ft-sns">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li><a href="https://www.facebook.com/loveovbaguette/" target="_blank" class="fa-brands fa-facebook-f"><span class="blind">페이스북</span></a></li>
+                            <li><a href="https://www.instagram.com/ovbaguette_kr/" target="_blank" class="fa-brands fa-instagram"><span class="blind">인스타그램</span></a></li>
+                            <li><a href="https://www.youtube.com/user/loveovbaguette" target="_blank" class="fa-brands fa-youtube"><span class="blind">유튜브</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="ft-brand">
+                        <h3 class="blind">Brand Sites</h3>
+                        <div class="ft-brand-inner">
+                            <a href="#" class="brand-label">Brand Sites</a>
+                            <div class="brand-item">
+                                <span>패밀리사이트</span>
+                                <a href="#" target="_blank">골프</a>
+                                <a href="#" target="_blank">파크로쉬</a>
+                                <a href="#" target="_blank">아이파크콘도</a>
+                                <a href="#" target="_blank">성문안</a>
+                            </div>
+                        </div><!--ft-brand-inner-->
+                    </div><!--ft-brand-->
+                </div><!--ft-sns-brand-->
+            </div><!--ft-info1-wrap-->
+            <div class="ft-info2-wrap">
+                <a href="#">이용약관</a>
+                <a href="#"><strong>개인정보처리방침</strong></a>
+                <a href="#">이메일무단수집거부</a>
+                <a href="#" class="last">영상정보처리기기운영관리방침</a>
+            </div>
+            <div class="ft-info3-wrap" id="ft-info3-wrap">Copyright © OAK VALLEY. All Rights Reserved. DC리조트 ㈜ 강원도 원주시 지정면 오크밸리 1길 66</div>
+        </section>
+    </footer>
+    <a href="#" class="btn-circle btn-top fa-solid fa-arrow-up"><span class="blind">위로</span></a>
+    <a href="#ft-info3-wrap" class="btn-circle btn-end fa-solid fa-arrow-up"><span class="blind">아래로</span></a>
+</body>
+</html>

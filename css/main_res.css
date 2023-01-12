@@ -1,0 +1,78 @@
+@charset 'utf-8';
+/* 1. 모바일까지 */
+@media screen and (max-width: 767px) {
+    
+    .pd-item:last-child{
+        display: none;
+    }
+}
+
+/* 2. 태블릿부터 */
+@media screen and (min-width: 768px) {
+    .condo-item {
+        margin-bottom: 40px;
+    }
+    .condo-dl dd {
+        margin: 0.6em 0;
+        font-size: 1.5em;
+    }
+    .condo-summary {
+        display: block;
+    }
+    .dn-item {
+        
+    }
+    .pd-item {
+        width: 50%;
+    }
+}
+
+/* 3. 태블릿만 */
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    .condo-item a {
+        padding-top: 30%;
+    }
+    .condo-dl {
+        padding-left: 33%;
+    }
+    .condo-img {
+        width: 30%;
+    }
+    .dn-item {
+        
+    }
+    .dn-item:nth-child(even) {
+        
+    }
+}
+
+/* 4. PC부터 */
+@media screen and (min-width: 1280px) {
+    #ov-main > section {
+        padding: 20px 30px;
+    }
+    #ov-main > section h2 {
+        text-align: center;
+    }
+    #ov-main .more-wrap {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        margin-top: 0;
+    }
+    .condo-item {
+        float: left;
+        width: 100%;
+    }
+    .condo-subject {
+        line-height: 1.4;
+    }
+    .pd-item {
+        width: 20%;
+    }
+	.main-g5-latest {
+		float: left;
+		width: 50%;
+		padding: 0 40px;
+	}
+}

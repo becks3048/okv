@@ -1,0 +1,274 @@
+@charset 'UTF-8';
+#ov-main > section {
+    padding: 60px 10px;
+}
+#ov-main > .main-banner-container {
+    padding: 0;
+}
+#ov-main > section h2 {
+    margin-bottom: 1em;
+    text-align: center;
+    font-size: 2em;
+}
+#ov-main .more-wrap {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* 1. 메인배너 */
+.main-banner-container {
+    position: relative;
+}
+.main-banner-wrap { /* 스크린 */
+    /* position: relative; */
+    width: 100%;
+    height: calc(100vh - 180px);
+    background-color: #ccc;
+    overflow: hidden;
+}
+.main-banner { /* 5개짜리 전체 리스트 */
+    height: 100%;
+}
+.mb-slide { /* 개별 슬라이드 */
+    height: calc(100vh - 180px);
+    background-position: center center;
+    background-size: cover;
+}
+.main-banner-slide1 {background-image: url('../images/main-banner1.jpg');}
+.main-banner-slide2 {background-image: url('../images/main-banner2.jpg');}
+.main-banner-slide3 {background-image: url('../images/main-banner3.jpg');}
+.main-banner-slide4 {background-image: url('../images/main-banner4.jpg');}
+.main-banner-slide5 {background-image: url('../images/main-banner5.jpg');}
+.main-banner-slide6 {background-image: url('../images/main-banner6.jpg');}
+
+.mb-slide a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.mb-slide a:hover, .mb-slide.slick-current a {
+    background-color: rgba(0,0,0,0);
+}
+.mb-slide span {
+    display: block;
+    padding: 40px;
+    font-size: 2em;
+    opacity: 0;
+    transition: 0.3s;
+}
+.mb-slide.slick-current span {
+    padding-left: 80px;
+    opacity: 1;
+}
+
+/* 2. 스페셜오퍼 */
+.main-offer {
+    font-size: 1em;
+    margin: 8% 2%;
+}
+.main-offer:hover {}
+.main-offer .offer1 {
+    background: url('../images/e037599c75cd4312a1b7c0d7b45ed0e8.jpg') center / cover no-repeat;
+}
+.main-offer .offer2 {
+    background: url('../images/8c473942f0f5404dbf0abf9d06845a4a.jpg') center / cover no-repeat;
+}
+.main-offer .offer3 {
+    background: url('../images/faec7ab012c74cfdae730e413da99461.jpg') center / cover no-repeat;
+}
+.main-offer .offer4 {
+    background: url('../images/ab302d4eebfc45a38dbda0109bb63319.png') center / cover no-repeat;
+}
+.main-offer .offer5 {
+    background: url('../images/17469f210cad4c5a91c6390e76e98103.jpg') center / cover no-repeat;
+}
+.main-offer a {
+    position: relative;
+    display: block;
+    padding-top: 100%;
+    color: #fff;
+    width: 100%;
+    box-shadow: 0 15px 15px rgb(0 0 0 / 40%);
+}
+.main-offer dl {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10% 8%;
+    /* 그라디언트 */
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.9) 100%); 
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.9) 100%); 
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.9) 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+}
+.main-offer dt {
+    position: relative;
+    font-size: 1.2em;
+    padding-bottom: 1em;
+    z-index: 1;
+}
+.main-offer dt:before {
+    position: absolute;
+    left: -10px;
+    top: 0;
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #023586;
+    z-index: -1;
+}
+.main-offer dd {
+    height: 5em;
+    word-break: keep-all;
+}
+
+/* 3. 객실 */
+.condo-item {
+    position: relative;
+    margin-bottom: 15%;
+}
+.condo-item a {
+    display: block;
+    padding-top: 40%;
+}
+.condo-dl {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding-left: 50%;
+    padding-right: 5%;
+}
+.condo-dl dt {
+    position: absolute;
+    left: -9999em;
+}
+.condo-dl dd {
+    margin: 0.3em 0;
+}
+.condo-cate {
+    color: #388194;
+}
+.condo-subject {
+    font-weight:500;
+}
+.condo-summary {
+    display: none;
+    word-break: keep-all;
+    font-size: 0.9em;
+}
+.condo-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width:45%;
+    margin: 0 !important;
+    background-color: #000;
+    overflow: hidden;
+}
+.condo-img img {
+    width: 100%;
+    opacity: 0.7;
+}
+.condo-img:after { /*덮는 그라디언트*/
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    width: 100%;
+    height: 100%;
+    content: '';
+    transition: bottom 0.3s;
+    /* 그라디언트 */
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 30%, rgba(0,0,0,0.6) 100%); 
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 30%,rgba(0,0,0,0.6) 100%); 
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 30%,rgba(0,0,0,0.6) 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+}
+.condo-img:hover:after {
+    bottom: 0;
+}
+.condo-img:hover .condo-inner-txt {
+    opacity: 1;
+}
+.condo-inner-txt {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.5em;
+    text-align: center;
+    transform: translateY(-50%); 
+    opacity: 0;
+    transition: 0.5s;
+    /*-19px 이동
+    1.top: calc(50% - 19px);
+    2.top: 50%; margin-top: -19px;
+    3.top: 50%; transform: translateY(-50%); 
+    */
+}
+.condo-date {
+    font-size: 0.7em;
+}
+/* 5. 제품 */
+.pd-item {
+    position: relative;
+    float: left;
+    display: block;
+    width: 50%;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 0.85em;
+    font-weight: 700;
+}
+.pd-item:before { /* 제품 이미지 */
+    position: relative;
+    display: block;
+    width: 90%;
+    padding-top: 90%;
+    margin: 5%;
+    margin-bottom: 7%;
+    background-size: cover;
+    content: '';
+    z-index: 1;
+}
+.pd-item1:before {background-image: url('../images/img-dining-oakcafe.jpg');}
+.pd-item2:before {background-image: url('../images/dining_item_golf_main_02.jpg');}
+.pd-item3:before {background-image: url('../images/dining_item_golf_main_03_01.png');}
+.pd-item4:before {background-image: url('../images/dining_item_ski_main_01.png');}
+.pd-item5:before {background-image: url('../images/dining_item_ski_main_04.png');}
+.pd-item:after { /* 제품 그라디언트 */
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    width: 100%;
+    padding-top: 100%;
+    opacity: 0;
+    transition: opacity 0.3s;
+    /* 그라디언트 */
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%); 
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.6) 100%); 
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.6) 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+}
+.pd-item:hover:after {
+    opacity: 0.5;
+}
+
+/* 커뮤니티 영역(그누보드 최근게시물) */
+.main-g5-container {
+    background-color: #f8f8f8;
+}
+.main-g5-latest > div {
+    background-color: transparent;
+}

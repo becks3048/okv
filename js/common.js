@@ -85,6 +85,14 @@ $(document).ready(function(){
         }
     });
 
+    $(".depth2>li").on({
+        "mouseenter": function(){
+            $(this).children().addClass("active");
+        },
+        "mouseleave": function(){
+            $(this).children().removeClass("active");
+        }
+    })
     //푸터 브랜드 펼침메뉴
     $(".brand-label").click(function(){
         $(".brand-item").toggleClass("active");
@@ -97,9 +105,9 @@ $(document).ready(function(){
     
     $(document).scroll(function(){
         scTop = $(document).scrollTop();
-        if(scTop > $(".main-banner").height()/2){
+        if(scTop > 0){
             hd.addClass("fixed");
-        } else if(scTop < $(".main-banner").height()-hd.height()) {
+        } else if(scTop < $(".main-banner").height()) {
             hd.removeClass("fixed");
         }
         $(".ani-top").each(function(){

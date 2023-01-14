@@ -72,6 +72,7 @@
         left: 50%;
         top: 80px;
         width: 180px;
+        height: inherit;
         padding: 20px 0;
         margin-left: -90px;
         line-height: 2.4;
@@ -91,7 +92,40 @@
         border-color: transparent transparent #fff transparent;
         content: '';
     }
+    
+    .depth2>li {
+        justify-content: center;
+        display: flex;
+    }
 
+    .depth3.active:before { /* 삼각형 */
+        position: absolute;
+        left: -7px;
+        top: 11px;
+        width: 0;
+        height: 0;
+        margin-left: -9px;
+        border-width: 6px 8px;
+        border-style: solid;
+        border-color: transparent #fff transparent transparent;
+        content: '';
+    }
+    .depth3 {
+        position: absolute;
+        left: 107%;
+        background: #fff;
+        color: black;
+        width: 100%;
+        display: block;
+        height: inherit;
+        opacity: 0;
+        padding: 20px 0;
+    }
+    .depth3.active{
+        opacity: 1; 
+        transition: 0.3s;
+        box-shadow: 0 0 8px rgb(0 0 0 / 15%);
+    }
     /* 푸터 */
     .insta-item {
         width: 16.6666%;

@@ -162,7 +162,6 @@
     transition: 0.5s;
 }
 
-.depth3 {}
 /* 메인메뉴 라인 
 .depth1 > a:after { 
     position: absolute;
@@ -193,7 +192,7 @@
 
 }
 .depth3 {
-    display: block;
+    display: none;
 }
 /* 서브메뉴 작동 구현 */
 .depth1.active > a {

@@ -110,10 +110,10 @@ $(document).ready(function(){
     $(document).scroll(function(){
         scTop = $(document).scrollTop();
         let btnPos = $(document).height() - $("#ov-ft").height();
-        console.log(btnPos);
-        console.log(scTop)
+        // console.log(btnPos);
+        // console.log(scTop)
 
-        if(scTop > 0){
+        if(scTop > $(".ov-gnb-wrap").height()){
             hd.addClass("fixed");
             $(".btn-circle").css("opacity","1");
             

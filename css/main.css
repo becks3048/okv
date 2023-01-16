@@ -250,7 +250,7 @@
     font-size: 0.7em;
 }
 /* 5. 제품 */
-.pd-item {
+.dn-item {
     position: relative;
     float: left;
     display: block;
@@ -260,7 +260,7 @@
     font-size: 0.85em;
     font-weight: 700;
 }
-.pd-item:before { /* 제품 이미지 */
+.dn-item:before { /* 제품 이미지 */
     position: relative;
     display: block;
     width: 90%;
@@ -271,12 +271,12 @@
     content: '';
     z-index: 1;
 }
-.pd-item1:before {background-image: url('../images/img-dining-oakcafe.jpg');}
-.pd-item2:before {background-image: url('../images/dining_item_golf_main_02.jpg');}
-.pd-item3:before {background-image: url('../images/dining_item_golf_main_03_01.png');}
-.pd-item4:before {background-image: url('../images/dining_item_ski_main_01.png');}
-.pd-item5:before {background-image: url('../images/dining_item_ski_main_04.png');}
-.pd-item:after { /* 제품 그라디언트 */
+.dn-item1:before {background-image: url('../images/img-dining-oakcafe.jpg');}
+.dn-item2:before {background-image: url('../images/dining_item_golf_main_02.jpg');}
+.dn-item3:before {background-image: url('../images/dining_item_golf_main_03_01.png');}
+.dn-item4:before {background-image: url('../images/dining_item_ski_main_01.png');}
+.dn-item5:before {background-image: url('../images/dining_item_ski_main_04.png');}
+.dn-item:after { /* 제품 그라디언트 */
     position: absolute;
     left: 0;
     top: 0;
@@ -285,13 +285,9 @@
     padding-top: 100%;
     opacity: 0;
     transition: opacity 0.3s;
-    /* 그라디언트 */
-    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%); 
-    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.6) 100%); 
-    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.6) 100%); 
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+    background: #382F2D;
 }
-.pd-item:hover:after {
+.dn-item:hover:after {
     opacity: 0.5;
 }
 

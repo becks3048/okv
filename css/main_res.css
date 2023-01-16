@@ -1,7 +1,7 @@
 @charset 'utf-8';
 /* 1. 모바일까지 */
 @media screen and (max-width: 767px) {
-    .pd-item:last-child{
+    .dn-item:last-child{
         display: none;
     }
 }
@@ -21,7 +21,7 @@
     .dn-item {
         
     }
-    .pd-item {
+    .dn-item {
         width: 50%;
     }
 }
@@ -66,7 +66,7 @@
     .condo-subject {
         line-height: 1.4;
     }
-    .pd-item {
+    .dn-item {
         width: 20%;
     }
 	.main-g5-latest {

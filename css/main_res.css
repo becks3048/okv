@@ -48,7 +48,7 @@
 /* 4. PC부터 */
 @media screen and (min-width: 1280px) {
     #ov-main > section {
-        padding: 20px 30px;
+        padding: 40px 30px;
     }
     #ov-main > section h2 {
         text-align: center;

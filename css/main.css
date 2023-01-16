@@ -26,12 +26,42 @@
     background-color: #ccc;
     overflow: hidden;
 }
+.mb-slide::before{
+    display: block;
+    content: '';
+    background: #000;
+    padding-top: 100%;
+    width: 100%;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+.main-banner-wrap:hover .mb-slide::before{
+   opacity: 0;
+}
+.main-banner-text {
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    display: inline-block;
+    color: #fff;
+}
+.main-banner-title{
+    display: block;
+    height: 100%;
+    font-size: 2em;
+    color: #fff;
+    font-weight: 500;
+}
+.main-banner-text > p {
+    display: inline-block;
+    line-height: 1.5;
+}
 .main-banner { /* 5개짜리 전체 리스트 */
     height: 100%;
 }
 .mb-slide { /* 개별 슬라이드 */
     height: calc(100vh - 180px);
-    background-position: center center;
+    inline-block-position: center center;
     background-size: cover;
 }
 .main-banner-slide1 {background-image: url('../images/main-banner1.jpg');}

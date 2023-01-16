@@ -87,12 +87,16 @@ $(document).ready(function(){
 
     $(".depth2>li").on({
         "mouseenter": function(){
-            $(this).children().addClass("active");
+            $(this).find(".depth3").stop().fadeIn(150);
+            //$(this).children().addClass("active");
         },
         "mouseleave": function(){
-            $(this).children().removeClass("active");
+            $(this).find(".depth3").stop().fadeOut(150);
+            //$(this).children().removeClass("active");
         }
     })
+
+    
     //푸터 브랜드 펼침메뉴
     $(".brand-label").click(function(){
         $(".brand-item").toggleClass("active");
@@ -105,11 +109,21 @@ $(document).ready(function(){
     
     $(document).scroll(function(){
         scTop = $(document).scrollTop();
+        let btnPos = $(document).height() - $("#ov-ft").height();
+        console.log(btnPos);
+        console.log(scTop)
+
         if(scTop > 0){
             hd.addClass("fixed");
-        } else if(scTop < $(".main-banner").height()) {
+            $(".btn-circle").css("opacity","1");
+            
+        } else if(scTop < btnPos) {
             hd.removeClass("fixed");
+            $(".btn-circle").css("opacity","0")
+
         }
+
+     
         $(".ani-top").each(function(){
             let offsetTop = $(this).offset().top - wH;
             //console.log(offsetTop);
@@ -119,5 +133,8 @@ $(document).ready(function(){
                 $(this).removeClass("fade-in");
             }
         });
+        
     });
+
+    
 });

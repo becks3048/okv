@@ -83,13 +83,13 @@
     .depth2:before { /* 삼각형 */
         position: absolute;
         left: 50%;
-        top: -18px;
+        top: -15px;
         width: 0;
         height: 0;
         margin-left: -7px;
         border-width: 9px 7px;
         border-style: solid;
-        border-color: transparent transparent #fff transparent;
+        border-color: #fff transparent transparent transparent;
         content: '';
     }
     
@@ -97,29 +97,37 @@
         justify-content: center;
         display: flex;
     }
-
-    .depth3.active:before { /* 삼각형 */
+    .depth2>li:hover,
+    .depth3>li:hover {
+        background: rgba(0,0,0,0.1);
+    }
+    .depth3>li:hover .depth3:before {
+        border-color: transparent rgba(0,0,0,0.1) transparent transparent;
+    }
+    
+    .depth3:before { /* 삼각형 */
         position: absolute;
-        left: -7px;
-        top: 11px;
+        left: -1px;
+        top: 10px;
         width: 0;
         height: 0;
         margin-left: -9px;
-        border-width: 6px 8px;
+        border-width: 7px 8px;
         border-style: solid;
-        border-color: transparent #fff transparent transparent;
+        border-color: transparent transparent transparent #fff;
         content: '';
     }
+    
     .depth3 {
+        display: none;
         position: absolute;
         left: 107%;
         background: #fff;
         color: black;
         width: 100%;
-        display: block;
         height: inherit;
-        opacity: 0;
         padding: 20px 0;
+        font-size: 0.95em;
     }
     .depth3.active{
         opacity: 1; 

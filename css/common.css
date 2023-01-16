@@ -36,11 +36,7 @@
     height: 0;
     transition: 0.5s; 
 }
-#ov-hd.fixed {
-    position: fixed;
-    background: #264d57;
-    height: 60px;
-}
+
 #ov-hd > .wrapper {
     position: relative;
     height: 60px;
@@ -143,7 +139,7 @@
     display: block;
     padding: 0 20px;
     color: white;
-    font-size: 1em;
+    font-size: 1.1em;
     font-weight: 300;
     line-height: 40px;
 }
@@ -185,7 +181,8 @@
 }
 .depth2 a {
     display: block;
-    color: #fff
+    color: #fff;
+    font-size: 0.9em;  
 }
 .depth2 a:hover {
     color: #264d57
@@ -193,6 +190,9 @@
 }
 .depth3 {
     display: none;
+}
+.depth3 > a {
+    font-size: 0.8em;
 }
 /* 서브메뉴 작동 구현 */
 .depth1.active > a {
@@ -328,7 +328,11 @@
 }
 
 /* 6. 푸터 */
+#ov-ft {
+    position: relative;
+    width: 100%;
 
+}
 /* 6.1 인스타그램 */
 .ft-sns-container {
     text-align: center;
@@ -637,7 +641,7 @@
 }
 /* 위아래 링크 */
 .btn-circle {
-    display: none;
+    display: block;
     position: fixed;
     right: 10px;
     width: 40px;
@@ -677,3 +681,10 @@
 .delay06 {transition-delay: 0.6s;}
 .delay08 {transition-delay: 0.8s;}
 .delay10 {transition-delay: 1.0s;}
+
+#ov-hd.fixed {
+    position: fixed;
+    background-color: #264d57;
+    color: #fff;
+    height: 60px;
+}   

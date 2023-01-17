@@ -4,6 +4,22 @@
     .dn-item:last-child{
         display: none;
     }
+    .main-banner-text {
+        top: 60%;
+        width: 75%;
+        word-break: keep-all;
+    }
+    .main-banner-title{
+        font-size: 1.5em;
+    }
+    .main-controls {
+        top: 50%;
+    }
+    .main-pagination {
+        display: none;
+    }
+    .main-banner-text > p {
+    }
 }
 
 /* 2. 태블릿부터 */
@@ -43,6 +59,12 @@
     .dn-item:nth-child(even) {
         
     }
+    .main-banner-text {
+        width: 65%;
+    }
+    .main-banner-title {
+        font-size: 1.3em;
+    }   
 }
 
 /* 4. PC부터 */

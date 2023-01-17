@@ -32,6 +32,7 @@
     background: #000;
     padding-top: 100%;
     width: 100%;
+    height: 100%;
     opacity: 0.5;
     transition: 0.3s;
 }
@@ -48,7 +49,7 @@
 .main-banner-title{
     display: block;
     height: 100%;
-    font-size: 2em;
+    font-size: 1.3em;
     color: #fff;
     font-weight: 500;
 }
@@ -61,7 +62,7 @@
 }
 .mb-slide { /* 개별 슬라이드 */
     height: calc(100vh - 180px);
-    inline-block-position: center center;
+    background-position: center center;
     background-size: cover;
 }
 .main-banner-slide1 {background-image: url('../images/main-banner1.jpg');}

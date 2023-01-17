@@ -1,7 +1,22 @@
 @charset 'UTF-8';
 /* 1. 모바일까지 ~767px */
 @media screen and (max-width: 767px) {
+    .ft-info1-wrap {
+        flex-direction: column;
 
+    }
+    .ft-info1-wrap > div {
+        flex-direction: column;
+        width: 100%;
+        padding: 15px 0;
+    }
+    .ft-info ul {
+        flex-direction: row;
+        gap: 10px;
+    }
+    .ft-info2-wrap {
+        font-size: 0.75em;
+    }
 }
 
 /* 2. 태블릿부터 768px~ */
@@ -79,6 +94,7 @@
         line-height: 2.4;
         text-align: center;
         background-color: #fff;
+        border-radius: 25px;
         box-shadow: 0 0 8px rgba(0,0,0,0.15);
     }
     .depth2:before { /* 삼각형 */
@@ -129,6 +145,8 @@
         height: inherit;
         padding: 20px 0;
         font-size: 0.95em;
+        border-radius: 25px;
+
     }
     .depth3.active{
         opacity: 1; 

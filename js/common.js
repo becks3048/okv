@@ -109,7 +109,7 @@ $(document).ready(function(){
     //offset : 문서로부터 떨어진 위치
     //속성으로는 left, top
     const lnb = $(".lnb-container");
-    let lnbPos = lnb.offset().top - hdH;
+    let lnbPos = lnb.offset() - hdH;
 
     function init() {
         hdH = hd.height();

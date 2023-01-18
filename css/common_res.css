@@ -3,7 +3,6 @@
 @media screen and (max-width: 767px) {
     .ft-info1-wrap {
         flex-direction: column;
-
     }
     .ft-info1-wrap > div {
         flex-direction: column;
@@ -32,6 +31,10 @@
         width: 33.3333%;
         padding-top: 33.3333%;
     }
+    .ft-info1-wrap {
+        
+        padding-top: 70px;
+    }
 }
 
 /* 3. 태블릿만 768px~1279px */
@@ -46,7 +49,6 @@
         font-size: 16px;
     }
     #ov-hd > .wrapper {
-        height: 90px;
     }
     .logo {
         left: 10%;

@@ -38,6 +38,65 @@ $(function(){
         $("#ov-lnb").append("<li><a href='" + subUrl[mainNum][j] + "'>" + sub[mainNum][j] + "</a></li>");
     }
     $("#ov-lnb > li:eq("+lnbActiveNum+")").addClass("active");
-    
-  
+
+
+    let wW = window.innerWidth;
+    let wH = window.innerHeight;
+    let scTop = 0;
+    const hd = $("#ov-hd");
+    let hdH = hd.height();
+    const body = $("body");
+
+
+   
+    function init() {
+        hdH = hd.height();
+        lnbPos = lnb.offset().top - hdH;
+    }
+
+
+function rwd() {
+        wW = window.innerWidth;
+        wH = window.innerHeight;
+        if(wW < 768) {
+            body.addClass("mo").removeClass("tb pc");
+        } else if(wW >= 768 && wW < 1280) {
+            body.addClass("tb").removeClass("mo pc");
+        } else {
+            body.addClass("pc").removeClass("mo tb");
+        }
+    }
+   const lnb = $(".lnb-container");
+    let lnbPos = lnb.offset() - hdH;
+    function init() {
+        hdH = hd.height();
+        lnbPos = lnb.offset().top - hdH;
+    }
+    init();
+    $(document).scroll(function(){
+        scTop = $(document).scrollTop();
+        let btnPos = $(document).height() - $("#ov-ft").height();
+        // console.log(btnPos);
+        // console.log(scTop)
+
+        if(scTop >0){
+            hd.addClass("fixed");
+            $(".btn-circle").css("opacity","1");
+            
+        } else if(scTop < btnPos) {
+            hd.removeClass("fixed");
+            $(".btn-circle").css("opacity","0")
+
+        }
+        if(scTop >= lnbPos){
+            if(body.hasClass("pc")){
+                lnb.addClass("fixed").css("top", "90px");
+            }
+            else {
+                lnb.addClass("fixed").css("top", "60px");
+            }
+        } else {
+            lnb.removeClass("fixed").css("top", "inherit");
+        }
+    })
 });

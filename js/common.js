@@ -108,13 +108,7 @@ $(document).ready(function(){
 
     //offset : 문서로부터 떨어진 위치
     //속성으로는 left, top
-    const lnb = $(".lnb-container");
-    let lnbPos = lnb.offset() - hdH;
-
-    function init() {
-        hdH = hd.height();
-        lnbPos = lnb.offset().top - hdH;
-    }
+ 
     $(document).scroll(function(){
         scTop = $(document).scrollTop();
         let btnPos = $(document).height() - $("#ov-ft").height();
@@ -129,16 +123,6 @@ $(document).ready(function(){
             hd.removeClass("fixed");
             $(".btn-circle").css("opacity","0")
 
-        }
-        if(scTop >= lnbPos){
-            if(body.hasClass("pc")){
-                lnb.addClass("fixed").css("top", "90px");
-            }
-            else {
-                lnb.addClass("fixed").css("top", "60px");
-            }
-        } else {
-            lnb.removeClass("fixed").css("top", "inherit");
         }
      
         $(".ani-top").each(function(){

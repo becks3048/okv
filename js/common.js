@@ -87,13 +87,15 @@ $(document).ready(function(){
 
     $(".depth2>li").on({
         "mouseenter": function(){
+            if(body.hasClass("pc")) { 
             $(this).find(".depth3").stop().fadeIn(150);
             //$(this).children().addClass("active");
-        },
+        }},
         "mouseleave": function(){
+            if(body.hasClass("pc")){
             $(this).find(".depth3").stop().fadeOut(150);
             //$(this).children().removeClass("active");
-        }
+        }}
     })
 
     
@@ -106,14 +108,20 @@ $(document).ready(function(){
 
     //offset : 문서로부터 떨어진 위치
     //속성으로는 left, top
-    
+    const lnb = $(".lnb-container");
+    let lnbPos = lnb.offset().top - hdH;
+
+    function init() {
+        hdH = hd.height();
+        lnbPos = lnb.offset().top - hdH;
+    }
     $(document).scroll(function(){
         scTop = $(document).scrollTop();
         let btnPos = $(document).height() - $("#ov-ft").height();
         // console.log(btnPos);
         // console.log(scTop)
 
-        if(scTop > $(".ov-gnb-wrap").height()){
+        if(scTop >0){
             hd.addClass("fixed");
             $(".btn-circle").css("opacity","1");
             
@@ -122,7 +130,16 @@ $(document).ready(function(){
             $(".btn-circle").css("opacity","0")
 
         }
-
+        if(scTop >= lnbPos){
+            if(body.hasClass("pc")){
+                lnb.addClass("fixed").css("top", "90px");
+            }
+            else {
+                lnb.addClass("fixed").css("top", "60px");
+            }
+        } else {
+            lnb.removeClass("fixed").css("top", "inherit");
+        }
      
         $(".ani-top").each(function(){
             let offsetTop = $(this).offset().top - wH;
